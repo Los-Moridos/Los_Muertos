@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #750b83;
+  --ifm-color-primary: #7f0aad;
   --ifm-color-primary-dark: #61246e;
   --ifm-color-primary-darker: #6b1e74;
   --ifm-color-primary-darkest: #602a70;
@@ -20,7 +20,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #db5aec;
+  --ifm-color-primary: #c130e1;
   --ifm-color-primary-dark: #9847aa;
   --ifm-color-primary-darker: #28062c;
   --ifm-color-primary-darkest: #4f205d;
