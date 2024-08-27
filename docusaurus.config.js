@@ -148,4 +148,12 @@ const config = {
     }),
 };
 
-export default config;
+export default {
+  themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
+  },
+};
