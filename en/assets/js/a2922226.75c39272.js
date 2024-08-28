@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklos_muertos=self.webpackChunklos_muertos||[]).push([[7783],{4162:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/Los_Muertos/en/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
