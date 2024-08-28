@@ -4,17 +4,17 @@
 ## **I. Formación de Equipos**
 
 ### 1. **Inscripción de Jugadores**
-   - **Registro**: Todos los jugadores deben estar inscritos en el servidor antes del inicio del torneo.  
-   - **Asignación de tags**: Cada jugador recibirá un tag con el nombre de su equipo, otorgándoles acceso a canales exclusivos.  
-   - **Corrección de tags**: En caso de recibir un tag incorrecto, el jugador debe notificar inmediatamente a los organizadores para corregirlo. **Prohibido** ingresar a canales que no correspondan al equipo; hacerlo resultará en sanciones a discreción de los organizadores.
+   - **Registro**: Todos los jugadores deberán estar inscritos en el servidor antes del inicio del torneo.  
+   - **Asignación de tags**: Los integrantes recibirán un tag con el nombre de su equipo que les otorgará acceso a canales exclusivos.  
+   - **Corrección de tags**: Si por algún motivo un organizador le asigna un tag incorrecto a un integrante, el jugador debe notificar a los organizadores para hacer el ajuste correspondiente. **Prohibido** ingresar a canales que no correspondan al equipo; hacerlo resultará en sanciones a discreción de los organizadores.
 
 ### 2. **Responsabilidades del Capitán**
-   - **Inscripción y Gestión**: El capitán es responsable de inscribir y gestionar al equipo, actuando como enlace principal para la comunicación de reglas y anuncios.  
+   - **Inscripción y Gestión**: El capitán es responsable de inscribir a los integrantes de su equipo y de comunicar las reglas y anuncios a su equipo.  
    - **Composición del equipo**:  
       - 1 Tanque  
       - 2 DPS  
       - 2 Apoyo  
-      - Hasta 2 Suplentes (opcional)
+      - Hasta 5 Suplentes (opcional)
 
 ### 3. **Identidad del Equipo**
    - **Logotipo**: Cada equipo debe proporcionar un logotipo representativo.  
@@ -23,7 +23,7 @@
    - **Participación mixta**: Se permite la participación de equipos compuestos por jugadores de PC, consola o mixtos.  
    - **Cantidad de equipos**: No hay un rango máximo o mínimo establecido para la cantidad de equipos participantes.
 
-- - - - 
+- - - -
 
 ## **II. Formato del Torneo**
 
@@ -34,7 +34,7 @@
 ### 2. **Modo de Juego**
    - **Modo Competitivo**: Todos los enfrentamientos se llevarán a cabo en el modo competitivo.
 
-- - - - 
+- - - -
 
 ## **III. Conducta y Comportamiento**
 
@@ -45,16 +45,68 @@
 ### 2. **Comportamientos Prohibidos**
    - **T-bagging**: Prohibido tanto entre compañeros de equipo como contra el equipo contrario.  
    - **Actos de Discordia**: Cualquier acción que genere discordia entre los jugadores será sancionada según la discreción de los organizadores.
-   - **Mensajes Tóxicos**: Mensajes o comentarios que tengan la intención de enfadar, ridiculizar o provocar al oponente, como ejemplo *"EZ", "Tank Gap"*, y similares, serán motivo de sanción.
+   - **Mensajes Tóxicos**: Mensajes o comentarios que tengan la intención de enfadar, ridiculizar o provocar al oponente, como ejemplo *"EZ", "Tank Gap"*, y similares, serán motivo de sanción.  
        - *Cualquier comportamiento tóxico será motivo de descalificación, según la discreción de los organizadores.*
 
+- - - -
 
-- - - - 
+## **IV. Fechas y Horarios de los Encuentros**
 
-## **IV. En la Arena, Todos Somos Iguales 🛡️**
+### 1. **Programación de Partidos**
+   - **Inicio de la Liga**: La liga inicia el 31 de agosto con 4 encuentros programados los sábados:
+      - 8 PM (hora CDMX) - Primer encuentro
+      - 9 PM - Segundo encuentro
+      - 10 PM - Tercer encuentro
+      - 11 PM - Cuarto encuentro
+
+### 2. **Flexibilidad de Fechas**
+   - **Cambio de Fecha**: Se jugarán dos jornadas por semana. El día oficial de los juegos es el sábado, pero existe flexibilidad para jugar el viernes o domingo si ambos capitanes acuerdan la nueva fecha y la comunican a Pink Spider o Glados en el chat de capitanes antes del jueves de la semana correspondiente.  
+   - **Fecha Límite**: Después de esa fecha límite, no se podrán realizar cambios en el calendario. Si no se llega a un acuerdo entre capitanes para un cambio, la situación será evaluada y se asignará una fecha definitiva que no podrá modificarse.
+
+### 3. **Jornadas y Clasificación**
+   - **Duración del Torneo**: Las partidas se jugarán en 8 jornadas.  
+   - **Sistema de Puntos**: Cada victoria otorgará un punto y una derrota 0. Al finalizar las 8 jornadas, los 4 primeros equipos en la clasificación avanzarán a las semifinales.  
+   - **Criterios de Desempate**:  
+      - Primer criterio: el enfrentamiento directo.  
+      - Segundo criterio: los puntos obtenidos en partidas ganadas.  
+      - Tercer criterio: victorias en minieventos.
+      - En caso de que continúe el empate, se definirá por una ruleta.
+
+- - - -
+
+## **V. Puntualidad**
+
+### 1. **Puntualidad en los Encuentros**
+   - **Tiempo de Llegada**: Los equipos deben presentarse 15 minutos antes en el canal de voz correspondiente a su equipo.  
+   - **Prórroga**: Se puede pedir una prórroga de 10 minutos de tolerancia.
+
+- - - -
+
+## **VI. Mini Eventos y Selección de Mapas**
+
+### 1. **Mini Eventos**
+   - **Eventos Previos**: De martes a jueves se realizarán mini eventos entre los equipos que juegan el sábado. El ganador de estos eventos tendrá la ventaja de elegir el mapa para su enfrentamiento. Si ambos equipos no pueden participar en el mini evento, el mapa será determinado al azar.  
+   - **Selección de Eventos**: Los minieventos se elegirán por medio de ruleta.  
+   - **Representación del Equipo**: El capitán deberá enviar a dos representantes de su equipo para competir en el minievento.
+
+### 2. **Tipos de Minieventos**
+   - **Minieventos Participantes**:
+      - 12 hooks, 1 hole
+      - Sleep n' yeet
+      - One shot (Ana o Cassidy)
+      - Flappy Mercy
+      - Genji Ball
+      - Doomfist Sumo
+      - Reinkart
+
+- - - -
+
+## **VII. En la Arena, Todos Somos Iguales 🛡️**
 
 ### 1. **Principios**
    - **Compañerismo**: Recuerden, la verdadera victoria no solo está en el marcador, sino en el respeto y el compañerismo.  
    - **Juego Limpio**: ¡Jueguen limpio, den lo mejor de sí y que gane el mejor equipo!
 
 ---
+
+*Actualizado la última vez el 26 de agosto del 2024.*
