@@ -34,3 +34,21 @@
 [data-theme="dark"] .hero__subtitle {
   color: var(--hero-title-color-dark); /* Color en modo oscuro */
 }
+
+.navbar-discord {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Mantiene el color del texto heredado del tema */
+}
+
+.navbar-discord::before {
+  content: "";
+  display: inline-block;
+  width: 24px; /* Ajusta el tamaño según sea necesario */
+  height: 24px; /* Ajusta el tamaño según sea necesario */
+  background: url('/img/discord.svg') no-repeat center center;
+  background-size: contain;
+  margin-right: 0.3em; /* Espacio entre el texto y el ícono */
+  vertical-align: middle; /* Alinea el ícono con el texto */
+}

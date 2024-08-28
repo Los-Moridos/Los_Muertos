@@ -28,16 +28,41 @@ function HomepageHeader() {
   );
 }
 
+// export default function Home() {
+//   const {siteConfig} = useDocusaurusContext();
+//   return (
+//     <Layout
+//       title={`Bienvenido a ${siteConfig.title}`}
+//       description="Comunidad Hispanohablante Dedicada a Overwatch 2.">
+//       <HomepageHeader />
+//       <main>
+//         <HomepageFeatures />
+//       </main>
+//     </Layout>
+//   );
+// }
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100vh',
+          fontSize: '2rem',
+          userSelect: 'none',
+        }}
+      >
+        <a 
+          href="docs/liga-01/reglamento"
+          style={{
+            fontSize: '2rem',
+            userSelect: 'none',
+            textDecoration: 'none',
+            color: 'inherit',
+            cursor: 'pointer',
+          }}>
+          TRABAJO EN PROCESO 😉</a>
+      </div>
   );
 }
