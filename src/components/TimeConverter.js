@@ -7,7 +7,6 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 function TimeConverter({ time }) {
   const [showTooltip, setShowTooltip] = useState(false);
   const tooltipRef = useRef(null);
-  const isMobile = () => /Mobi|Android/i.test(navigator.userAgent); // https://developer.mozilla.org/en-US/docs/Web/API/Navigator/userAgent
 
   const handleMouseEnter = () => {
     setShowTooltip(true);
@@ -22,23 +21,13 @@ function TimeConverter({ time }) {
   };
 
   const convertToLocalTime = (time) => {
-    <BrowserOnly>
-    
-    const timeZone = 'America/Mexico_City'; // GMT-6 (CDMX) btw
-    
-    const parsedTime = parse(time, 'hh:mm aa', new Date()); // https://date-fns.org/v3.6.0/docs/parse
-    
-    const zonedTime = fromZonedTime(parsedTime, timeZone);  // Asignar zona horaria
-
-    const browserTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone; // Detectar zona horaria del navegador
-
-    const localTime = toZonedTime(zonedTime, browserTimeZone);  // Convertir la hora CDMX a la zona horaria de navegador, creo xD
-
-    const convertedTime = format(localTime, 'hh:mm a', { timeZone: browserTimeZone });  // Rehacer el formato de salida
-
+    const timeZone = 'America/Mexico_City'; // GMT-6 (CDMX)
+    const parsedTime = parse(time, 'hh:mm aa', new Date()); // Parse the input time
+    const zonedTime = fromZonedTime(parsedTime, timeZone); // Assign time zone
+    const browserTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone; // Detect browser time zone
+    const localTime = toZonedTime(zonedTime, browserTimeZone); // Convert CDMX time to browser time zone
+    const convertedTime = format(localTime, 'hh:mm a', { timeZone: browserTimeZone }); // Format output time
     return convertedTime;
-    </BrowserOnly>
-    
   };
 
   useEffect(() => {
@@ -55,18 +44,22 @@ function TimeConverter({ time }) {
   }, []);
 
   return (
-    <span
-    onMouseEnter={!isMobile() ? handleMouseEnter : null}
-    onMouseLeave={!isMobile() ? handleMouseLeave : null}
-    onClick={isMobile() ? handleClick : null}>
-      {convertToLocalTime(time)} Hora de tu Ciudad<InfoIcon className="InfoIcon"/>
-      
-      {showTooltip && (
-        <div ref={tooltipRef} className="tooltip">
-          {time + " Hora Ciudad de México"}
-        </div>
+    <BrowserOnly>
+      {() => (
+        <span
+          onMouseEnter={!/Mobi|Android/i.test(navigator.userAgent) ? handleMouseEnter : null}
+          onMouseLeave={!/Mobi|Android/i.test(navigator.userAgent) ? handleMouseLeave : null}
+          onClick={/Mobi|Android/i.test(navigator.userAgent) ? handleClick : null}
+        >
+          {convertToLocalTime(time)} Hora de tu Ciudad<InfoIcon className="InfoIcon" />
+          {showTooltip && (
+            <div ref={tooltipRef} className="tooltip">
+              {time + " Hora Ciudad de México"}
+            </div>
+          )}
+        </span>
       )}
-    </span>
+    </BrowserOnly>
   );
 }
 
