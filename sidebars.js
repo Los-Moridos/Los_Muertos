@@ -19,12 +19,18 @@ const sidebars = {
   // But you can create a sidebar manually
 
   tutorialSidebar: [
-    'liga-01/reglamento',
-    // {
-    //   type: 'category',
-    //   label: 'Tutorial',
-    //   items: ['tutorial-basics/create-a-document'],
-    // },
+    {
+      type: 'category',
+      label: 'Liga: Los Muertos',
+      link:  {
+        type: 'doc',
+        id: 'liga/2024/index' // This is the id of the index page.
+      },
+      items: ['liga/2024/reglamento',
+        'liga/2024/calendario',
+        'liga/2024/equipos'
+      ],
+    },
   ],
 
 };

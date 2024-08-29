@@ -23,14 +23,10 @@ const config = {
   organizationName: 'Los-Moridos', // Usually your GitHub org/user name.
   projectName: 'Los_Muertos', // Usually your repo name.
   deploymentBranch: "gh-pages",
-  
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'es',
     locales: ['en','es'],
@@ -43,10 +39,6 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -54,11 +46,6 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -73,7 +60,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
         defaultMode: 'dark',
@@ -94,7 +80,6 @@ const config = {
             position: 'left',
             label: 'Liga',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://discord.gg/4JgnCEvndw',
             label: 'Discord',
@@ -106,15 +91,6 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/docs/intro',
-          //     },
-          //   ],
-          // },
           {
             title: 'Comunidad',
             items: [
@@ -128,21 +104,8 @@ const config = {
               },
             ],
           },
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus',
-          //     },
-          //   ],
-          // },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Los Muertos. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Los Muertos. Hecho con ❤️ iamargelh. <br>Construído con Docusaurus. `,
       },
       prism: {
         theme: prismThemes.github,

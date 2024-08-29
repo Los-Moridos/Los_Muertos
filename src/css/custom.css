@@ -52,3 +52,35 @@
   margin-right: 0.3em; /* Espacio entre el texto y el ícono */
   vertical-align: middle; /* Alinea el ícono con el texto */
 }
+.align-right{
+  text-align: right;
+}
+.tooltip {
+  position: absolute;
+  background-color: #fff;
+  border-top: 0.1rem solid #c130e1;
+  border-bottom: 0.25rem solid #c130e1;
+  border-left: 0.25rem solid #c130e1;
+  border-right: 0.1rem solid #c130e1;
+  padding: 5px;
+  z-index: 999;
+  
+  /* Ajusta las posiciones y demás estilos según tus necesidades */
+}
+
+[data-theme="dark"] .tooltip {
+  position: absolute;
+  background-color: #1b1b1d;
+  border-top: 0.1rem solid #9847aa;
+  border-bottom: 0.25rem solid #9847aa;
+  border-left: 0.25rem solid #9847aa;
+  border-right: 0.1rem solid #9847aa;
+
+  /* Ajusta las posiciones y demás estilos según tus necesidades */
+}
+
+.InfoIcon{
+  padding-top: 0.5rem;
+  margin-bottom: -0.5rem;
+  color: var(--ifm-color-primary);
+}
