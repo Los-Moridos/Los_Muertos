@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { format, toZonedTime, fromZonedTime } from 'date-fns-tz';
 import { parse } from 'date-fns';
 import InfoIcon from '@mui/icons-material/Info';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 function TimeConverter({ time }) {
   const [showTooltip, setShowTooltip] = useState(false);
@@ -21,6 +22,8 @@ function TimeConverter({ time }) {
   };
 
   const convertToLocalTime = (time) => {
+    <BrowserOnly>
+    
     const timeZone = 'America/Mexico_City'; // GMT-6 (CDMX) btw
     
     const parsedTime = parse(time, 'hh:mm aa', new Date()); // https://date-fns.org/v3.6.0/docs/parse
@@ -34,6 +37,8 @@ function TimeConverter({ time }) {
     const convertedTime = format(localTime, 'hh:mm a', { timeZone: browserTimeZone });  // Rehacer el formato de salida
 
     return convertedTime;
+    </BrowserOnly>
+    
   };
 
   useEffect(() => {
