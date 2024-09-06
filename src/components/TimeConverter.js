@@ -21,12 +21,12 @@ function TimeConverter({ time }) {
   };
 
   const convertToLocalTime = (time) => {
-    const timeZone = 'America/Mexico_City'; // GMT-6 (CDMX)
-    const parsedTime = parse(time, 'hh:mm aa', new Date()); // Parse the input time
-    const zonedTime = fromZonedTime(parsedTime, timeZone); // Assign time zone
-    const browserTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone; // Detect browser time zone
-    const localTime = toZonedTime(zonedTime, browserTimeZone); // Convert CDMX time to browser time zone
-    const convertedTime = format(localTime, 'hh:mm a', { timeZone: browserTimeZone }); // Format output time
+    const timeZone = 'America/Mexico_City';                                             // GMT-6 (CDMX)
+    const parsedTime = parse(time, 'hh:mm aa', new Date());                             // Parsear input time
+    const zonedTime = fromZonedTime(parsedTime, timeZone);                              // Asignar zona horaria
+    const browserTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;           // Detectar zona horaria del navegador
+    const localTime = toZonedTime(zonedTime, browserTimeZone);                          // Convertir hora CDMX a hora local
+    const convertedTime = format(localTime, 'hh:mm a', { timeZone: browserTimeZone });  // Formatear el output
     return convertedTime;
   };
 
