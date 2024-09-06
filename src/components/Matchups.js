@@ -70,7 +70,6 @@ const Matchup = ({ team1, team2, score1, score2, team1Image, team2Image }) => {
   };
 
   return (
-    <BrowserOnly>
     <div>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '27rem' }}>
         <div style={team1Style}>
@@ -92,7 +91,6 @@ const Matchup = ({ team1, team2, score1, score2, team1Image, team2Image }) => {
         </div>
       </div>
     </div>
-    </BrowserOnly>
   );
 };
 
