@@ -84,3 +84,16 @@
   margin-bottom: -0.5rem;
   color: var(--ifm-color-primary);
 }
+.IconsMdx{
+  margin-right: -0.25rem;
+  padding-top: 0.3rem;
+  color: var(--ifm-color-primary);
+  margin-bottom: -0.25rem;
+}
+.contender{
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+}
+.hidden {
+  display: none !important;
+}

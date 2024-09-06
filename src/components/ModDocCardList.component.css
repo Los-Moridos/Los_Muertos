@@ -1,0 +1,54 @@
+.doc-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Espacio entre las tarjetas */
+    margin: 0 auto; /* Centra las tarjetas en el contenedor */
+    max-width: 75rem; /* Ajusta el ancho máximo según tus necesidades */
+    padding: 0.625rem;
+  }
+  
+.doc-card {
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    border: 0.063rem solid #ddd; /* Borde gris claro */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    text-align: center; /* Centra el contenido de texto */
+    width: 13.907rem; /* Ancho fijo para las tarjetas */
+    transition:
+    border-color , transform 0.3s ease,
+    box-shadow 0.3s linear;
+}
+  
+.doc-card:hover {
+    transform: translateY(-0.313rem); /* Sube la tarjeta ligeramente al pasar el cursor */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Sombra sutil para el efecto de elevación */
+    border-color: var(--ifm-color-primary);
+    border-width: 0.15rem 0.15rem;
+}
+  
+.doc-card-image {
+    display: block; /* Asegura que la imagen sea un bloque */
+    width: 100%; /* Imagen ocupa el ancho completo de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área del contenedor */
+	-webkit-user-drag: none;
+    user-select: none;
+}
+  
+.doc-card h3 {
+    font-size: 1.25rem; /* Tamaño de fuente para el título */
+    margin: 0.625rem 0; /* Espacio arriba y abajo del título */
+    color: #333; /* Color del texto del título */
+    text-decoration: 'none';
+    user-select: none;
+}
+
+
+@media (max-width: 576px){
+    .doc-card{
+        width: 8.5rem;
+    }
+    .doc-card h3 {
+        font-size: 1.1rem; /* Tamaño de fuente para el título */
+    }
+  }

@@ -57,9 +57,20 @@ const config = {
     ],
   ],
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
   themeConfig:
+
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      mermaid: {
+        options: {
+          maxTextSize: 5000,
+        },
+      },
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
         defaultMode: 'dark',
@@ -76,9 +87,15 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'mainSidebar',
             position: 'left',
             label: 'Liga',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'equiposLiga',
+            position: 'left',
+            label: 'Todos los Equipos',
           },
           {
             href: 'https://discord.gg/4JgnCEvndw',
