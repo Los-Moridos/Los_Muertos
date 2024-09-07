@@ -76,7 +76,7 @@
 .blur-text-container::before {
     content: "";
     position: absolute;
-    top: 0.53rem;
+    top: 0.51rem;
     left: 0.15rem;
     width: 100%;
     height: 70%;
@@ -84,8 +84,8 @@
     backdrop-filter: blur(4px);
     z-index: -1;
     border-radius: 0.5rem;
-    padding: 0 0 0 0.25rem;
-    margin: 0 0 0 -0.25rem;
+    padding: 0 0 0 0.5rem;
+    margin: 0 0 0 -0.4rem;
 }
 [data-theme="dark"] .blur-text-container::before{
     background: rgba(61, 61, 61, 0.4);
@@ -143,7 +143,7 @@
         border-radius: 0.6rem;
     }
     .blur-text-container::before {
-        top: 0.3rem;
+        top: 0.32rem;
     }
     .blur-score-text-container::before {
         top: 0.22rem;

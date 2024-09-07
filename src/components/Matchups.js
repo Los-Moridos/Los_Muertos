@@ -6,9 +6,11 @@ const Matchup = ({ jornada, enfrentamiento, front }) => {
   const [json_data, setjson_data] = useState(null);
   const jornada_key = `jornada_${jornada}`;
   const enfrentamiento_key = `enfrentamiento_${enfrentamiento}`;
+  const js_page = 'https://los-moridos.github.io/Los_Muertos_Files/'
+  const js_page_key = `liga/2024_2/enfrentamientos.json?v=${Date.now()}`
 
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/Los-Moridos/Los_Muertos_Files/main/liga/2024_2/enfrentamientos.json')
+    fetch(`${js_page}${js_page_key}`)
       .then(response => response.json())
       .then(data => {
         setjson_data(data);
