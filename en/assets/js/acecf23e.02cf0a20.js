@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklos_muertos=self.webpackChunklos_muertos||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/Los_Muertos/en/blog","blogTitle":"Blog","authorsListPath":"/Los_Muertos/en/blog/authors"}')}}]);
