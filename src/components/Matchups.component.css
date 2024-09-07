@@ -80,12 +80,15 @@
     left: 0.15rem;
     width: 100%;
     height: 70%;
-    background: rgba(61, 61, 61, 0.4);
+    background: rgba(34, 34, 34, 0.5);
     backdrop-filter: blur(4px);
     z-index: -1;
     border-radius: 0.5rem;
     padding: 0 0 0 0.25rem;
     margin: 0 0 0 -0.25rem;
+}
+[data-theme="dark"] .blur-text-container::before{
+    background: rgba(61, 61, 61, 0.4);
 }
 
 .blur-score-text-container::before {
@@ -95,14 +98,14 @@
 }
 
 .team-text-size {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: bold;
     position: relative;
 }
 
 .puntos-text-size {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
 }
 
 .text-container-padding-bot{
@@ -124,11 +127,11 @@
 
 @media (max-width: 576px){
     .team-text-size {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     
     .puntos-text-size {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
     .vs {
         font-size: 1.1rem;
@@ -147,11 +150,11 @@
     }
     .text-container-padding-bot{
         margin-bottom: -0.4rem;
-        transform: translateY(0.1rem);
+        transform: translateY(0.25rem);
     }
     .text-container-padding-top{
         margin-top: -0.4rem;
-        transform: translateY(-0.1rem);
+        transform: translateY(-0.25rem);
     }
     
 }
