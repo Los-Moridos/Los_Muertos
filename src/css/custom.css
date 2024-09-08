@@ -68,11 +68,6 @@
   border-right: 0.1rem solid #9847aa;
 }
 
-.InfoIcon{
-  padding-top: 0.5rem;
-  margin-bottom: -0.5rem;
-  color: var(--ifm-color-primary);
-}
 .IconsMdx{
   margin-right: -0.25rem;
   padding-top: 0.3rem;

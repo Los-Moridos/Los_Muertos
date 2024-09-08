@@ -1,128 +1,139 @@
 ---
-description: Enfrentamientos de la Liga.
-sidebar_label: Enfrentamientos
+description: Próximos Enfrentamientos de la Liga
+sidebar_label: Proximos Enfrentamientos
 sidebar_position: 1
 
-
+json: "liga/2024_2/enfrentamientos"
 equipos:
   - nombre: "Doro de matar"
-    imagen: "/Los_Muertos/img/teams_images/Doro_de_matar_512.webp"
+    imagen: "/img/teams_images/Doro_de_matar_512.webp"
     docId: "/docs/liga/equipos/doro_de_matar"
 
   - nombre: "Flying Whales"
-    imagen: "/Los_Muertos/img/teams_images/Flying_Whales_512.webp"
+    imagen: "/img/teams_images/Flying_Whales_512.webp"
     docId: "/docs/liga/equipos/flying_whales"
 
   - nombre: "Jack y sus amigos"
-    imagen: "/Los_Muertos/img/teams_images/Jack_y_sus_amigos_512.webp"
+    imagen: "/img/teams_images/Jack_y_sus_amigos_512.webp"
     docId: "/docs/liga/equipos/jack_y_sus_amigos"
 
   - nombre: "Spider Watchers"
-    imagen: "/Los_Muertos/img/teams_images/Spider_Watchers_512.webp"
+    imagen: "/img/teams_images/Spider_Watchers_512.webp"
     docId: "/docs/liga/equipos/spider_watchers"
 
   - nombre: "Tacos de Asada"
-    imagen: "/Los_Muertos/img/teams_images/Tacos_de_Asada_512.webp"
+    imagen: "/img/teams_images/Tacos_de_Asada_512.webp"
     docId: "/docs/liga/equipos/tacos_de_asada"
+
 ---
 
 import Mermaid from '@theme/Mermaid';
-import TimeConverter from '@site/src/components/TimeConverter';
-import InfoIcon from '@mui/icons-material/Info';
+import Matchups from '@site/src/components/Matchups.js';
+import TimeConverter from '@site/src/components/TimeConverter.js';
+import '@site/src/css/enfrentamientos.css';
 
-# Enfrentamientos - TRABAJO EN PROCESO.
+# Enfrentamientos Próximos
 
-## Jornada 1 y 2
-### Fecha Prevista: 31 de Agosto de 2024
-#### Jornada 1
-<Mermaid
-    value={`
-        flowchart TD
-            subgraph Ronda1["Jornada 1"]
-                E1_1[<a class="contender" href="../equipos/placeholder">Doro de matar</a>] --> |<small>Enfrentamiento 1</small><br>VS<br><small>Enfrentamiento 1</small>| E2_1["Descanso"]
-                E1_2[<a class="contender" href="../equipos/placeholder">Tacos de asada</a>] --> |VS<br><small>Enfrentamiento 2</small>| E2_2[<a class="contender" href="../equipos/placeholder">Jack y sus amigos</a>]
-                E1_3[<a class="contender" href="../equipos/placeholder">Spider Watchers</a>] --> |VS<br><small>Enfrentamiento 3</small>| E2_3[<a class="contender" href="../equipos/placeholder">Fliying Whales</a>]
-            end
-    `}
- />
-<details>
-    <summary>Jornada 1: Horario de Enfrentamientos</summary>
-    <small>**Primero:** <TimeConverter time="07:00 PM" /><br/>
-    **Segundo:** <TimeConverter time="08:00 PM" /><br/>
-    **Tercero:** <TimeConverter time="09:00 PM" /></small>
-</details>
+## Jornada 3
+  ### Enfrentamiento 2
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="3"
+  enfrentamiento="2"/>
 
-#### Jornada 2
-<Mermaid
-    value={`
-        flowchart TD
-            subgraph Ronda2["Jornada 2"]
-                E3_1["Descanso"] --> |VS<br><small>Enfrentamiento 1</small>| E4_1["Tacos de asada"]
-                E3_2["Jack y sus amigos"] --> |VS<br><small>Enfrentamiento 2</small>| E4_2["Spider Watchers"]
-                E3_3["Flying Whales"] --> |VS<br><small>Enfrentamiento 3</small>| E4_3["Doro de matar"]
-            end
-    `}
- />
-<details>
-    <summary>Jornada 2: Horario de Enfrentamientos</summary>
-    <small>**Primero:** <TimeConverter time="07:00 PM" /><br/>
-    **Segundo:** <TimeConverter time="10:00 PM" /><br/>
-    **Tercero:** <TimeConverter time="11:00 PM" /></small>
-</details>
- 
-## Jornada 3 y 4
-### Fecha Prevista: 07 de Septiembre de 2024
-#### Jornada 3
-<Mermaid
-    value={`
-        flowchart TD
-            subgraph Ronda4["Jornada 4"]
-                E7_1["Enfrentamiento 1"] --> |VS<br><small>Hora</small>| E8_1["Enfrentamiento 1"]
-                E7_2["Enfrentamiento 2"] --> |VS<br><small>Hora</small>| E8_2["Enfrentamiento 2"]
-                E7_3["Enfrentamiento 3"] --> |VS<br><small>Hora</small>| E8_3["Enfrentamiento 3"]
-            end
-            subgraph Ronda3["Jornada 3"]
-                E5_1["Enfrentamiento 1"] --> |VS<br><small>Hora</small>| E6_1["Enfrentamiento 1"]
-                E5_2["Enfrentamiento 2"] --> |VS<br><small>Hora</small>| E6_2["Enfrentamiento 2"]
-                E5_3["Enfrentamiento 3"] --> |VS<br><small>Hora</small>| E6_3["Enfrentamiento 3"]
-            end
-    `}
- />
+## Jornada 4
+  ### Enfrentamiento 2
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="4"
+  enfrentamiento="2"/>
 
 
-## Jornada 5 y 6
-### Fecha Prevista: 14 de Septiembre de 2024
-<Mermaid
-    value={`
-        flowchart TD
-            subgraph Ronda6["Jornada 6"]
-                E11_1["Enfrentamiento 1"] --> |VS<br><small>Hora</small>| E12_1["Enfrentamiento 1"]
-                E11_2["Enfrentamiento 2"] --> |VS<br><small>Hora</small>| E12_2["Enfrentamiento 2"]
-                E11_3["Enfrentamiento 3"] --> |VS<br><small>Hora</small>| E12_3["Enfrentamiento 3"]
-            end
-            subgraph Ronda5["Jornada 5"]
-                E9_1["Enfrentamiento 1"] --> |VS<br><small>Hora</small>| E10_1["Enfrentamiento 1"]
-                E9_2["Enfrentamiento 2"] --> |VS<br><small>Hora</small>| E10_2["Enfrentamiento 2"]
-                E9_3["Enfrentamiento 3"] --> |VS<br><small>Hora</small>| E10_3["Enfrentamiento 3"]
-            end
-    `}
- />
+
+## Jornada 5
+  ### Enfrentamiento 1
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="5"
+  enfrentamiento="1"/>
+
+  ### Enfrentamiento 2
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="5"
+  enfrentamiento="2"/>
 
 
-## Jornada 7 y 8
-### Fecha Prevista: 21 de Septiembre de 2024
-<Mermaid
-    value={`
-        flowchart TD
-            subgraph Ronda8["Jornada 8"]
-                E15_1["Enfrentamiento 1"] --> |VS<br><small>Hora</small>| E16_1["Enfrentamiento 1"]
-                E15_2["Enfrentamiento 2"] --> |VS<br><small>Hora</small>| E16_2["Enfrentamiento 2"]
-                E15_3["Enfrentamiento 3"] --> |VS<br><small>Hora</small>| E16_3["Enfrentamiento 3"]
-            end
-            subgraph Ronda7["Jornada 7"]
-                E13_1["Enfrentamiento 1"] --> |VS<br><small>Hora</small>| E14_1["Enfrentamiento 1"]
-                E13_2["Enfrentamiento 2"] --> |VS<br><small>Hora</small>| E14_2["Enfrentamiento 2"]
-                E13_3["Enfrentamiento 3"] --> |VS<br><small>Hora</small>| E14_3["Enfrentamiento 3"]
-            end
-    `}
- />
+
+## Jornada 6
+  ### Enfrentamiento 1
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="6"
+  enfrentamiento="1"/>
+
+  ### Enfrentamiento 2
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="6"
+  enfrentamiento="2"/>
+
+  
+
+## Jornada 7
+  ### Enfrentamiento 1
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="7"
+  enfrentamiento="1"/>
+
+  ### Enfrentamiento 2
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="7"
+  enfrentamiento="2"/>
+  
+  
+
+## Jornada 8
+  ### Enfrentamiento 1
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="8"
+  enfrentamiento="1"/>
+
+  ### Enfrentamiento 2
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="8"
+  enfrentamiento="2"/>
+
+
+
+## Jornada 9
+  ### Enfrentamiento 1
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="9"
+  enfrentamiento="1"/>
+
+  ### Enfrentamiento 2
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="9"
+  enfrentamiento="2"/>
+
+
+
+## Jornada 10
+  ### Enfrentamiento 1
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="10"
+  enfrentamiento="1"/>
+
+  ### Enfrentamiento 2
+  <Matchups 
+  front={frontMatter.equipos} json={frontMatter.json}
+  jornada="10"
+  enfrentamiento="2"/>

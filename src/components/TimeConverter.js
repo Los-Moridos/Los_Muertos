@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { format, toZonedTime, fromZonedTime } from 'date-fns-tz';
 import { parse } from 'date-fns';
-import InfoIcon from '@mui/icons-material/Info';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import Tooltip from '@site/src/components/GenericTooltip.js';
+import './TimeConverter.component.css';
 
 function TimeConverter({ time }) {
   const [showTooltip, setShowTooltip] = useState(false);
@@ -46,18 +47,15 @@ function TimeConverter({ time }) {
   return (
     <BrowserOnly>
       {() => (
-        <span
-          onMouseEnter={!/Mobi|Android/i.test(navigator.userAgent) ? handleMouseEnter : null}
-          onMouseLeave={!/Mobi|Android/i.test(navigator.userAgent) ? handleMouseLeave : null}
-          onClick={/Mobi|Android/i.test(navigator.userAgent) ? handleClick : null}
-        >
-          {convertToLocalTime(time)} Hora de tu Ciudad<InfoIcon className="InfoIcon" />
-          {showTooltip && (
-            <div ref={tooltipRef} className="tooltip">
+        <div className='time-container'>
+          {
+            <Tooltip text={`${convertToLocalTime(time)}`}>
+              {convertToLocalTime(time) + " Hora de tu Ciudad"}
+              <br/>
               {time + " Hora Ciudad de México"}
-            </div>
-          )}
-        </span>
+            </Tooltip>
+          }
+        </div>
       )}
     </BrowserOnly>
   );

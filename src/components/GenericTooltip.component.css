@@ -1,0 +1,36 @@
+.tooltip {
+    position: absolute;
+    bottom: 3.5rem;
+    background-color: #fff;
+    border-top: 0.1rem solid #c130e1;
+    border-bottom: 0.25rem solid #c130e1;
+    border-left: 0.25rem solid #c130e1;
+    border-right: 0.1rem solid #c130e1;
+    padding: 0.3rem;
+    z-index: 999;
+    height: max-content;
+    width: max-content;
+    border-radius: 0.6rem;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    
+}
+
+[data-theme="dark"] .tooltip {
+    background-color: #1b1b1d;
+    border-top: 0.1rem solid #9847aa;
+    border-bottom: 0.25rem solid #9847aa;
+    border-left: 0.25rem solid #9847aa;
+    border-right: 0.1rem solid #9847aa;
+}
+
+.tooltip-text{
+    cursor: pointer;
+}
+
+@media (max-width: 576px){
+    .tooltip {
+        bottom: 3rem;
+    }
+}

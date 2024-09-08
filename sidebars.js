@@ -40,7 +40,7 @@ const sidebars = {
             type: 'doc',
             id: 'liga/2024/calendario'
           },
-          items: ['liga/2024/enfrentamientos']
+          items: ['liga/2024/enfrentamientos','liga/2024/enfrentamientos_resultados']
         },
         {
           type: 'doc',
