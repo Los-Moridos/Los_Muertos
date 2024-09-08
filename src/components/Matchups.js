@@ -41,18 +41,18 @@ const Matchup = ({ jornada, enfrentamiento, front, json }) => {
 
   const overlayteam_1 = {
     backgroundColor: score_1 > score_2
-      ? 'rgba(0, 255, 0, 0.3)'  // Win
+      ? 'rgba(0, 255, 0, 0.25)'  // Win
       : score_2 > score_1
-        ? 'rgba(255, 0, 0, 0.3)'  // Lose
-        : 'rgba(0, 0, 0, 0.3)',   // En Espera
+        ? 'rgba(255, 0, 25, 0.35)'  // Lose
+        : 'rgba(0, 0, 0, 0.25)',   // En Espera
   };
 
   const overlayteam_2 = {
     backgroundColor: score_2 > score_1
-      ? 'rgba(0, 255, 0, 0.3)'  // Win
+      ? 'rgba(0, 255, 0, 0.25)'  // Win
       : score_1 > score_2
-        ? 'rgba(255, 0, 0, 0.3)'  // Lose
-        : 'rgba(0, 0, 0, 0.3)',   // En Espera
+        ? 'rgba(255, 0, 25, 0.35)'  // Lose
+        : 'rgba(0, 0, 0, 0.25)',   // En Espera
   };
 
   return (
