@@ -34,7 +34,7 @@ const Matchup = ({ jornada, enfrentamiento, front, json }) => {
               <div className="skeleton skeleton-image"></div>
             </div>
             <div className="vs">
-              <div className="skeleton skeleton-text" style={{ width: '50px' }}></div>
+              <div className="skeleton skeleton-vs"></div>
             </div>
             <div className="team">
               <div className="skeleton skeleton-image"></div>
@@ -43,9 +43,9 @@ const Matchup = ({ jornada, enfrentamiento, front, json }) => {
         </div>
         <div className="left-margin-fix">
           <div className="enfrentamientos-container">
-            <div className="skeleton skeleton-text"></div>
+            <div className="skeleton skeleton-time"></div>
             <div className='msif-margin-left'></div>
-            <div className="skeleton skeleton-text skeleton-date" ></div>
+            <div className="skeleton skeleton-date" ></div>
           </div>
         </div>
       </div>

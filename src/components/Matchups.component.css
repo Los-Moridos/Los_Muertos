@@ -324,23 +324,29 @@
     animation: skeleton-loading 1.2s infinite ease-in-out;
   }
   
-  .skeleton-text {
-    height: 2rem;
-    width: 6.25rem;
+  .skeleton-time {
+    height: 1.85rem;
+    width: 7.25rem;
+    margin: 0.3rem 0;
+  }
+
+  .skeleton-vs {
+    height: 1.85rem;
+    width: 1.25rem;
     margin: 0.3rem 0;
   }
 
   .skeleton-date {
-    height: 2rem;
+    height: 1.7rem;
     width: 15.25rem;
     margin: 0.3rem 0;
   }
   
   .skeleton-image {
     width: 15rem;
-    height: 8rem;
+    height: 6rem;
     margin: 0.313rem;
-    border-radius: 1.5rem;
+    border-radius: 0.3rem;
   }
   
   @keyframes skeleton-loading {
